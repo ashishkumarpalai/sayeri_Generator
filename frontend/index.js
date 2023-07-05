@@ -14,7 +14,7 @@ async function generateSayeri() {
     sayeriContainer.appendChild(loader);
   
     try {
-      const response = await fetch(`http://localhost:8080/sayeri?keyword=${keyword}`);
+      const response = await fetch(`https://sayeri-generator.onrender.com/sayeri?keyword=${keyword}`);
     //   http://localhost:8080/sayeri?keyword=love
       const dataReceived = await response.json();
       sayeriContainer.textContent = dataReceived.sayeri;
